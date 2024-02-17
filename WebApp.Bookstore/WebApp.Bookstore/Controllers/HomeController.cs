@@ -4,9 +4,20 @@ namespace WebApp.Bookstore.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ViewResult Index()
         {
-            return "WebApplication Book Store";
+            //return View("TempView/NewView.cshtml");
+            return View();
+        }
+
+        public ViewResult About()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
+        {
+            return View();
         }
     }
 }

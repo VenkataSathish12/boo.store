@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/wwwroot/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <title>Index</title>
+    </head>
+    <body class="container">
+    <img src="~/wwwroot/images/google'.png" alt="logo" />
+        <h1 class="h1">Welcome to book store application</h1>
+        <h1>@DateTime.Now</h1>
+        @* <h3>Multiline</h3>
+        @{
+            int a = 12;
+            int b = 13;
+            int c = a + b;
+        }
+        <h3> c = @c</h3> *@
+    @{
+        var list = new List<int>() { 1, 2, 3, 4, 5, 6 };
+    }
+
+    @foreach (var item in list)
+    {
+        <h1>@item</h1>
+    }
+    <h2>This is the Home page of our book store application</h2>
+    </body>
+    <script src="~/lib/jquery/jquery.js"></script>
+</html>
+<script>
+    $(document).ready(function () {
+        alert("Page loaded");
+    });
+</script>
